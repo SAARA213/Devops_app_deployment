@@ -1,0 +1,14 @@
+# docker-compose file for nodejs-application:
+version: '3'
+services:
+  nodejs-app: # service name & you can give any name:
+    image: ravivarman46/nodejs #yours image name:
+    container_name: nodejs-app
+    ports:
+      - 3000:3000 # port mapping
+    volumes:
+      - nodejs-vol:/app/
+
+volumes:
+  nodejs-vol:
+    external: true 
