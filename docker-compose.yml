@@ -1,0 +1,6 @@
+version: '3'
+services:
+  capstone:
+    image: "capstone-2"  # Use the correct image name
+    ports:
+      - "80:3000"
